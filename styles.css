@@ -1,0 +1,136 @@
+/* Set some default settings */
+* {
+  box-sizing: border-box; /* Use box sizing to include padding and margin in total width/height*/
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-container {
+  display: flex; /* Use flexbox to create columns */
+  height: 100vh; /* Set the container height to 100% of viewport height */
+  font-family: Verdana, sans-serif;
+  color: #555555;
+}
+
+.left-column {
+  text-align: center;
+  width: 25%;
+  position: fixed;
+  padding: 20px;
+  height: 100%; /* Set the left column height to 100% of the container */
+  background-image: linear-gradient(to right, #D8D8D8, white);
+}
+
+img {
+  max-width: 80%;
+  margin: auto;
+  border-radius: 50%;
+  border: 2px solid #F4BB44;
+  margin-top: 50px;
+}
+
+.right-column {
+  width: 75%;
+  margin-left: 360px;
+  height: 100%; /* Set the right column height to 100% of the container */
+  align-items: center;
+}
+
+/* Text */
+h1 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+  padding-top: 10px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1em;
+}
+
+#short-presentation\ section {
+  font-size: 1.5em;
+}
+
+.navbar {
+  height: 12vh;
+  font-size: 1em;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background: white;
+}
+
+.navbar li {
+  display: inline-block;
+  float: right;
+  padding: 25px 50px 0px 0px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.navbar li a:hover {
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1.2);
+  color: #F4BB44;
+}
+
+.links {
+  display: inline-block;
+  font-size: 2em;
+  padding: 30px 20px;
+  text-decoration: none;
+  color: #555555;
+}
+
+.social-links a:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+  color: #F4BB44;
+}
+
+.right-content {
+  background-color: #ffffff;
+
+}
+
+#short-presentation\ section, #about\ section, #resume\ section, #contact\ section {
+  padding: 8% 10%;
+}
+
+li {
+  list-style-type: square;
+  padding: 5px 0px;
+}
+
+
+hr {
+  border: 1px solid #F4BB44;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.octicon {
+  font-size: 32px; /* Adjust the size as needed */
+  margin: 10px;
+}
