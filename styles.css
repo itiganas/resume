@@ -112,7 +112,7 @@ p {
 }
 
 #short-presentation\ section, #about\ section, #resume\ section, #contact\ section{
-  padding: 10%;
+  padding: 20% 10%;
 }
 
 li {
@@ -130,14 +130,18 @@ footer {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-width: 480px) {
 
   #short-presentation\ section {
     font-size: 1.2em;
   }
 
   #short-presentation\ section, #about\ section, #resume\ section, #contact\ section{
-    padding: 40% 10%;
+    padding: 50% 10%;
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
   }
 }
 
