@@ -7,40 +7,59 @@
 }
 
 .resume-container {
-  display: flex; /* Use flexbox to create columns */
+  display: grid;
+  grid-template-columns: 30% 70%; /* Define column widths */
+  grid-gap: 20px;
   height: 100vh; /* Set the container height to 100% of viewport height */
   font-family: Verdana, sans-serif;
   color: #555555;
 }
 
 .left-column {
+  position: fixed;
   text-align: center;
   width: 25%;
+  height: 100%;
   padding: 20px;
   background-image: linear-gradient(to right, #D8D8D8, white);
-  position: fixed;
-  height: 100%;
 }
 
+/* Add one column more to resolve flex issue */
 .left-column-2 {
   text-align: center;
   width: 25%;
+  height: 100%;
   padding: 20px;
   background-image: linear-gradient(to right, #D8D8D8, white);
-  height: 100%;
 }
 
 img {
-  max-width: 80%;
+  width: 80%;
   margin: auto;
   border-radius: 50%;
   border: 2px solid #F4BB44;
   margin-top: 50px;
 }
 
+.links {
+  display: inline-block;
+  font-size: 2em;
+  padding: 30px 20px;
+  text-decoration: none;
+  color: #555555;
+}
+
+.social-links a:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+  color: #F4BB44;
+}
+
 .right-column {
-  width: 75%;
+  width: 100%;
   align-items: center;
+  border: 2px solid blue;
+  position: relative;
 }
 
 /* Text */
@@ -71,18 +90,25 @@ p {
 }
 
 .navbar {
-  height: 12vh;
+  align-items: center;
   font-size: 1em;
   position: sticky;
-  z-index: 1;
   top: 0;
-  background: white;
+  background-color: white;
+  border: 2px solid red;
+  overflow: hidden;
+}
+
+.navbar li:first-child {
+  float: left;
+  margin-left: 20px;
 }
 
 .navbar li {
-  display: inline-block;
+  display: block;
   float: right;
-  padding: 25px 50px 0px 0px;
+  text-align: center;
+  padding: 1.3em;
 }
 
 .navbar li a {
@@ -96,27 +122,8 @@ p {
   color: #F4BB44;
 }
 
-.links {
-  display: inline-block;
-  font-size: 2em;
-  padding: 30px 20px;
-  text-decoration: none;
-  color: #555555;
-}
-
-.social-links a:hover {
-  transition: transform 0.3s ease-in-out;
-  transform: scale(1.2);
-  color: #F4BB44;
-}
-
-.right-content {
-  background-color: #ffffff;
-
-}
-
-#short-presentation\ section, #about\ section, #resume\ section, #contact\ section {
-  padding: 8% 10%;
+#short-presentation\ section, #about\ section, #resume\ section, #contact\ section{
+  padding: 10%;
 }
 
 li {
@@ -124,19 +131,19 @@ li {
   padding: 5px 0px;
 }
 
-
 hr {
   border: 1px solid #F4BB44;
 }
 
-.icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+footer {
+ text-align: center;
+  padding: 20px 0px;
+  width: 100%;
 }
 
-.octicon {
-  font-size: 32px; /* Adjust the size as needed */
-  margin: 10px;
+@media (max-width: 768px) {
+  #short-presentation\ section, #about\ section, #resume\ section, #contact\ section{
+    padding: 40% 10%;
+  }
 }
+
