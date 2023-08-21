@@ -16,10 +16,18 @@
 .left-column {
   text-align: center;
   width: 25%;
-  position: fixed;
   padding: 20px;
-  height: 100%; /* Set the left column height to 100% of the container */
   background-image: linear-gradient(to right, #D8D8D8, white);
+  position: fixed;
+  height: 100%;
+}
+
+.left-column-2 {
+  text-align: center;
+  width: 25%;
+  padding: 20px;
+  background-image: linear-gradient(to right, #D8D8D8, white);
+  height: 100%;
 }
 
 img {
@@ -32,8 +40,6 @@ img {
 
 .right-column {
   width: 75%;
-  margin-left: 360px;
-  height: 100%; /* Set the right column height to 100% of the container */
   align-items: center;
 }
 
