@@ -24,15 +24,6 @@
   background-image: linear-gradient(to right, #D8D8D8, white);
 }
 
-/* Add one column more to resolve flex issue */
-.left-column-2 {
-  text-align: center;
-  width: 25%;
-  height: 100%;
-  padding: 20px;
-  background-image: linear-gradient(to right, #D8D8D8, white);
-}
-
 img {
   width: 80%;
   margin: auto;
@@ -58,7 +49,6 @@ img {
 .right-column {
   width: 100%;
   align-items: center;
-  border: 2px solid blue;
   position: relative;
 }
 
@@ -95,7 +85,6 @@ p {
   position: sticky;
   top: 0;
   background-color: white;
-  border: 2px solid red;
   overflow: hidden;
 }
 
@@ -142,6 +131,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+  #short-presentation\ section {
+    font-size: 1.2em;
+  }
+
   #short-presentation\ section, #about\ section, #resume\ section, #contact\ section{
     padding: 40% 10%;
   }
